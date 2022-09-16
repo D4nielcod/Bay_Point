@@ -150,8 +150,8 @@ a.top-btn:hover {
     url("../images/Blog/background.jpg") center/cover;
   color: #fff;
   display: flex;
-  height: 40vh;
   font-family: "Nova Cut", cursive;
+  height: 40vh;
   padding: 0px 100px;
 }
 
@@ -159,9 +159,22 @@ a.top-btn:hover {
   font-size: 70%;
 }
 
+@media screen and (max-width: 1300px) {
+  .section-one {
+    height: 35vh;
+    padding: 0px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-one {
+    height: 30vh;
+    padding: 0px 30px;
+  }
+}
+
 /* Section Prime - Blog */
 .section-prime {
-  padding: 100px 100px;
+  padding: 100px;
 }
 
 .box-one {
@@ -170,11 +183,11 @@ a.top-btn:hover {
 }
 
 .sect-column {
-  height: 460px;
-  width: 100%;
   border: 1px solid #f2f2f2;
   box-shadow: 0px 3px 10px rgba(169, 169, 169, 0.7);
+  height: 460px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .sect-last-col {
@@ -221,25 +234,25 @@ a.top-btn:hover {
 }
 
 .box-text p {
-  margin-bottom: 10px;
   line-height: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .box-text a {
   color: #850e35;
-  text-decoration: none;
-  font-weight: 600;
   font-size: 90%;
+  font-weight: 600;
+  text-decoration: none;
   text-transform: capitalize;
 }
 
 .box-two {
-  float: right;
-  width: 38%;
   background-color: #fff;
-  box-shadow: 0px 3px 15px #f2f2f2;
   border: 1px solid #f2f2f2;
+  box-shadow: 0px 3px 15px #f2f2f2;
+  float: right;
   padding: 30px 20px;
+  width: 38%;
 }
 
 .search-box {
@@ -253,11 +266,11 @@ a.top-btn:hover {
 }
 
 .search-box label {
-  display: inline-block;
   background-color: #a51445;
-  cursor: pointer;
-  font-size: 90%;
   color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 90%;
   padding: 10px;
 }
 .search-box label:hover {
@@ -271,9 +284,9 @@ a.top-btn:hover {
 
 .insta-feed-column {
   float: left;
-  width: 33.3333%;
   height: 100px;
   padding: 1px;
+  width: 33.3333%;
 }
 
 .insta-feed-first-column {
@@ -285,8 +298,8 @@ a.top-btn:hover {
 }
 
 .insta-feed-card {
-  height: 100%;
   cursor: pointer;
+  height: 100%;
 }
 .insta-feed-card:hover {
   transform: scale(1.02);
@@ -314,6 +327,44 @@ a.top-btn:hover {
 
 .insta-feed-card6 {
   background: url("../images/Blog/box2-img6.jpg") center/cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .section-prime {
+    padding: 50px;
+  }
+
+  .box-one {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .sect-column {
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .box-text {
+    padding: 30px 20px;
+  }
+
+  .box-two {
+    width: 100%;
+  }
+
+  .search-box {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-prime {
+    padding: 50px 30px;
+  }
+
+  .insta-feed-column {
+    width: 50%;
+  }
 }
 
 /* Footer */
