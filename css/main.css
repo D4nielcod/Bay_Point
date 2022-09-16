@@ -927,9 +927,11 @@ footer ul li {
 
 footer ul li a {
   color: #5a192f;
+  cursor: pointer;
   display: block;
   font-size: 90%;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 .footer-text p:first-of-type {
@@ -1075,6 +1077,13 @@ footer ul li a {
   display: block;
   padding: 10px 0px;
   text-decoration: none;
+}
+
+.responsive ul li a.responsive-home {
+  font-weight: 700;
+}
+.responsive ul li a.responsive-home:hover {
+  color: #850e35;
 }
 
 /* Contact Pop-up form */

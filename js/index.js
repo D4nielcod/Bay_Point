@@ -58,16 +58,20 @@ closeBtn(contactCloseBtn, contactForm);
 const marketingCard = document.querySelector(".sect2-marketing");
 const marketingPopUp = document.querySelector(".service-marketing");
 const marketingCloseBtn = document.querySelector(".service-marketing-close");
+const footerMarketing = document.querySelector(".footer-marketing");
 
 popUp(marketingCard, marketingPopUp);
+popUp(footerMarketing, marketingPopUp);
 closeBtn(marketingCloseBtn, marketingPopUp);
 
 // Service Pop-up - Pricing
 const pricingCard = document.querySelector(".sect2-pricing");
 const pricingPopUp = document.querySelector(".service-pricing");
 const pricingCloseBtn = document.querySelector(".service-pricing-close");
+const footerPricing = document.querySelector(".footer-pricing");
 
 popUp(pricingCard, pricingPopUp);
+popUp(footerPricing, pricingPopUp);
 closeBtn(pricingCloseBtn, pricingPopUp);
 
 // Service Pop-up - Negotiation
@@ -76,16 +80,20 @@ const negotiationPopUp = document.querySelector(".service-negotiation");
 const negotiationCloseBtn = document.querySelector(
   ".service-negotiation-close"
 );
+const footerNegotiation = document.querySelector(".footer-negotiation");
 
 popUp(negotiationCard, negotiationPopUp);
+popUp(footerNegotiation, negotiationPopUp);
 closeBtn(negotiationCloseBtn, negotiationPopUp);
 
 // Service Pop-up - Inspection
 const inspectionCard = document.querySelector(".sect2-inspection");
 const inspectionPopUp = document.querySelector(".service-inspection");
 const inspectionCloseBtn = document.querySelector(".service-inspection-close");
+const footerInspection = document.querySelector(".footer-inspection");
 
 popUp(inspectionCard, inspectionPopUp);
+popUp(footerInspection, inspectionPopUp);
 closeBtn(inspectionCloseBtn, inspectionPopUp);
 
 // Resort Pop-up - Image 1
