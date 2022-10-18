@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,8 +26,10 @@
       <div class="navbar-item1">
         <div class="navbar-name">
           <h2>Bay Point</h2>
-          <div class="menu-btn">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+
+          <div class="navbar-menu-btn">
+            <div class="navbar-menu-bar navbar-menu-bar-one"></div>
+            <div class="navbar-menu-bar"></div>
           </div>
         </div>
 
@@ -43,9 +45,27 @@
       </div>
     </div>
 
+    <!-- Responsive Navbar -->
+    <div class="resbar">
+      <div class="resbar-item">
+        <h2>Bay Point</h2>
+
+        <div class="resbar-menu-btn">
+          <div class="resbar-menu-bar resbar-menu-bar-one"></div>
+          <div class="resbar-menu-bar resbar-menu-bar-two"></div>
+        </div>
+      </div>
+
+      <ul>
+        <li><a href="./index.html" class="resbar-home">Home</a></li>
+        <li><a href="./html/property.html">Properties</a></li>
+        <li><a href="./html/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
     <!-- Section One - Background Image -->
     <section class="section-one">
-      <div class="sect1-text">
+      <div class="sect1-container">
         <h1>A Higher Form of Realty.</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
@@ -61,100 +81,185 @@
       </div>
     </section>
 
-    <div class="main-body">
-      <!-- Sectio Two - Services -->
-      <section class="section-two">
-        <div class="sect2-heading">
-          <h2>Our Services</h2>
-        </div>
+    <!-- Section Two - Services -->
+    <section class="section-two">
+      <div class="section-heading">
+        <h2>Services</h2>
+        <p>Here are some of the services we provide</p>
+      </div>
 
-        <div class="row">
-          <div class="sect2-column sect2-col1">
-            <div class="sect2-card sect2-marketing">
-              <div class="sect2-img sect2-img1"></div>
-              <h5>Marketing of homes</h5>
-            </div>
-          </div>
+      <div class="sect2-container">
+        <div class="sect2-main-box sect2-marketing">
+          <div class="sect2-image-box sect2-img1"></div>
 
-          <div class="sect2-column">
-            <div class="sect2-card sect2-pricing">
-              <div class="sect2-img sect2-img2"></div>
-              <h5>Pricing of Properties</h5>
-            </div>
-          </div>
-
-          <div class="sect2-column">
-            <div class="sect2-card sect2-negotiation">
-              <div class="sect2-img sect2-img3"></div>
-              <h5>Negotiation Services</h5>
-            </div>
-          </div>
-
-          <div class="sect2-column sect2-col4">
-            <div class="sect2-card sect2-inspection">
-              <div class="sect2-img sect2-img4"></div>
-              <h5>Inspection Services</h5>
-            </div>
+          <div class="sect2-text-box">
+            <h5>Marketing of homes</h5>
           </div>
         </div>
-      </section>
 
-      <!-- Section Three - Category -->
-      <section class="section-three">
-        <div class="sect3-heading">
-          <h2>Categories</h2>
-          <p>Here are the categories of real estate we are into.</p>
-        </div>
+        <div class="sect2-main-box sect2-pricing">
+          <div class="sect2-image-box sect2-img2"></div>
 
-        <div class="row">
-          <div class="sect3-column sect3-col1">
-            <div class="sect3-card sect3-card-land">
-              <div class="sect3-img img-land"></div>
-
-              <div class="sect3-text">
-                <h5>Land real estate</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect3-column">
-            <div class="sect3-card">
-              <div class="sect3-img img-residential"></div>
-
-              <div class="sect3-text">
-                <h5>residential real estate</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect3-column">
-            <div class="sect3-card">
-              <div class="sect3-img img-commercial"></div>
-
-              <div class="sect3-text">
-                <h5>Commercial real estate</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect3-column sect3-col4">
-            <div class="sect3-card">
-              <div class="sect3-img img-industrial"></div>
-
-              <div class="sect3-text">
-                <h5>Industrial real estate</h5>
-              </div>
-            </div>
+          <div class="sect2-text-box">
+            <h5>Pricing of Properties</h5>
           </div>
         </div>
-      </section>
 
-      <!-- Section Four - Resort -->
-      <section class="section-four">
-        <div class="sect4-col sect4-col1"></div>
+        <div class="sect2-main-box sect2-negotiation">
+          <div class="sect2-image-box sect2-img3"></div>
 
-        <div class="sect4-col sect4-col2">
-          <div class="sect4-text">
+          <div class="sect2-text-box">
+            <h5>Negotiation Services</h5>
+          </div>
+        </div>
+
+        <div class="sect2-main-box sect2-inspection">
+          <div class="sect2-image-box sect2-img4"></div>
+
+          <div class="sect2-text-box">
+            <h5>Inspection Services</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Three - Category -->
+    <section class="section-three">
+      <div class="section-heading">
+        <h2>Categories</h2>
+        <p>Here are the categories of real estate we are into</p>
+      </div>
+
+      <div class="sect3-container">
+        <div class="sect3-main-box">
+          <div class="sect3-image-box sect3-img1"></div>
+
+          <div class="sect3-text-box">
+            <h5>Land real estate</h5>
+          </div>
+        </div>
+
+        <div class="sect3-main-box">
+          <div class="sect3-image-box sect3-img2"></div>
+
+          <div class="sect3-text-box">
+            <h5>residential real estate</h5>
+          </div>
+        </div>
+
+        <div class="sect3-main-box">
+          <div class="sect3-image-box sect3-img3"></div>
+
+          <div class="sect3-text-box">
+            <h5>Commercial real estate</h5>
+          </div>
+        </div>
+
+        <div class="sect3-main-box">
+          <div class="sect3-image-box sect3-img4"></div>
+
+          <div class="sect3-text-box">
+            <h5>Industrial real estate</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="sect3-footing">
+        <!-- Land Real Estate More -->
+        <div class="sect3-footing-card">
+          <div class="sect3-foot-title">
+            <h6>Land Real Estate</h6>
+
+            <div class="sect3-land-btn">
+              <p class="land-open-btn">+</p>
+              <p class="land-close-btn">+</p>
+            </div>
+          </div>
+
+          <div class="sect3-footing-text-box sect3-land-text">
+            <p>
+              Land is the baseline for all types of real property. Land
+              typically refers to undeveloped property and vacant land. We
+              acquire land and combine it with other properties (called
+              assembly) and rezone it so the density and value of the property
+              can increase.
+            </p>
+          </div>
+        </div>
+
+        <!-- Residential Real Estate More -->
+        <div class="sect3-footing-card">
+          <div class="sect3-foot-title">
+            <h6>Residential Real Estate</h6>
+
+            <div class="sect3-residential-btn">
+              <p class="residential-open-btn">+</p>
+              <p class="residential-close-btn">+</p>
+            </div>
+          </div>
+
+          <div class="sect3-footing-text-box sect3-residential-text">
+            <p>
+              Residential real estate consists of housing for individuals,
+              families, or groups of people. This is the most common type of
+              estate and is the asset class that most people are familiar with.
+              Within residential, there are single-family homes, apartments,
+              condominiums, townhouses, and other types of living arrangements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Residential Real Estate More -->
+        <div class="sect3-footing-card">
+          <div class="sect3-foot-title">
+            <h6>Commercial Real Estate</h6>
+
+            <div class="sect3-commercial-btn">
+              <p class="commercial-open-btn">+</p>
+              <p class="commercial-close-btn">+</p>
+            </div>
+          </div>
+
+          <div class="sect3-footing-text-box sect3-commercial-text">
+            <p>
+              Commercial property refers to land and buildings that are used by
+              businesses to carry out their operations. Examples include
+              shopping malls, individual stores, office buildings, parking lots,
+              medical centers, and hotels.
+            </p>
+          </div>
+        </div>
+
+        <!-- Residential Real Estate More -->
+        <div class="sect3-footing-card">
+          <div class="sect3-foot-title">
+            <h6>Industrial Real Estate</h6>
+
+            <div class="sect3-industrial-btn">
+              <p class="industrial-open-btn">+</p>
+              <p class="industrial-close-btn">+</p>
+            </div>
+          </div>
+
+          <div class="sect3-footing-text-box sect3-industrial-text">
+            <p>
+              Industrial real estate refers to land and buildings that are used
+              by industrial businesses for activities such as factories,
+              mechanical productions, research and development, construction,
+              transportation, logistics, and warehousing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Four - Resort -->
+    <section class="section-four">
+      <div class="sect4-container">
+        <div class="sect4-main-box sect4-main-box1"></div>
+
+        <div class="sect4-main-box sect4-main-box2">
+          <div class="sect4-text-box">
             <h3>Ecotourism Resort</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -164,25 +269,17 @@
             </p>
           </div>
 
-          <div class="row">
-            <div class="sect4-column sect4-column1">
-              <div class="sect4-card sect4-img1"></div>
-            </div>
+          <div class="sect4-item1">
+            <div class="sect4-image-box sect4-img2"></div>
 
-            <div class="sect4-column">
-              <div class="sect4-card sect4-img2"></div>
-            </div>
+            <div class="sect4-image-box sect4-img3"></div>
 
-            <div class="sect4-column">
-              <div class="sect4-card sect4-img3"></div>
-            </div>
+            <div class="sect4-image-box sect4-img4"></div>
 
-            <div class="sect4-column sect4-column4">
-              <div class="sect4-card sect4-img4"></div>
-            </div>
+            <div class="sect4-image-box sect4-img5"></div>
           </div>
 
-          <div class="sect4-text2">
+          <div class="sect4-item2">
             <div>
               <p><span>Price:</span> $1 000 000 000</p>
               <p>Nature, Environment, Culture, Authentic Cuisine</p>
@@ -191,339 +288,276 @@
             <button>Buy Now</button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Section Five - Properties -->
-      <section class="section-five">
-        <div class="sect5-heading">
-          <h2>Property for sale</h2>
-        </div>
-
-        <div class="row">
-          <div class="sect5-column sect5-col1">
-            <div class="sect5-card">
-              <div class="sect5-img img-office"></div>
-
-              <div class="sect5-text">
-                <p>$16 000</p>
-                <h5>Office</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis, perferendis.
-                </p>
-                <a href="#">Buy</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect5-column">
-            <div class="sect5-card">
-              <div class="sect5-img img-hotel"></div>
-
-              <div class="sect5-text">
-                <p>$160 000 000</p>
-                <h5>Hotel</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis, perferendis.
-                </p>
-                <a href="#">Buy</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect5-column">
-            <div class="sect5-card">
-              <div class="sect5-img img-cottage"></div>
-
-              <div class="sect5-text">
-                <p>$1 600</p>
-                <h5>Cottage</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis, perferendis.
-                </p>
-                <a href="#">Buy</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect5-column">
-            <div class="sect5-card">
-              <div class="sect5-img img-mansion"></div>
-
-              <div class="sect5-text">
-                <p>$160 000 000</p>
-                <h5>Mansion</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis, perferendis.
-                </p>
-                <a href="#">Buy</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect5-column sect5-col5">
-            <div class="sect5-card">
-              <div class="sect5-img img-highrise"></div>
-
-              <div class="sect5-text">
-                <p>$160 000</p>
-                <h5>High-Rise Apartment</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis, perferendis.
-                </p>
-                <a href="#">Buy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sect5-footing">
-          <a href="./html/property.html">More </a>
-          <i class="fa fa-caret-right" aria-hidden="true"></i>
-        </div>
-      </section>
-
-      <!-- Section Six - Statement -->
-      <section class="section-six">
-        <div class="row">
-          <div class="sect6-column sect6-col1">
-            <div class="sect6-card">
-              <h3>Mission</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Assumenda doloribus quis, doloremque et sunt, mollitia
-                architecto, rem voluptate esse omnis quidem eaque repellendus
-                perspiciatis? Expedita, itaque. Rem ad dolorum delectus.
-              </p>
-            </div>
-          </div>
-
-          <div class="sect6-column">
-            <div class="sect6-card">
-              <h3>Vision</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Assumenda doloribus quis, doloremque et sunt, mollitia
-                architecto, rem voluptate esse omnis quidem eaque repellendus
-                perspiciatis? Expedita, itaque. Rem ad dolorum delectus.
-              </p>
-            </div>
-          </div>
-
-          <div class="sect6-column sect6-col3">
-            <div class="sect6-card">
-              <h3>Values</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Assumenda doloribus quis, doloremque et sunt, mollitia
-                architecto, rem voluptate esse omnis quidem eaque repellendus
-                perspiciatis? Expedita, itaque. Rem ad dolorum delectus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Seven - Team -->
-      <section class="section-seven">
-        <div class="sect7-heading">
-          <p>Meet</p>
-          <h2>The Team</h2>
-        </div>
-
-        <div class="row">
-          <div class="sect7-column sect7-col1">
-            <div class="sect7-card img-worker1">
-              <div class="sect7-text">
-                <h5>Home Inspector</h5>
-                <p>John Kingsley</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect7-column">
-            <div class="sect7-card img-worker2">
-              <div class="sect7-text">
-                <h5>Property Manager</h5>
-                <p>Mary Watson</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect7-column">
-            <div class="sect7-card img-worker3">
-              <div class="sect7-text">
-                <h5>Leasing Manager</h5>
-                <p>Paul Grayson</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect7-column">
-            <div class="sect7-card img-worker4">
-              <div class="sect7-text">
-                <h5>Escrow officer</h5>
-                <p>Mark Cage</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect7-column">
-            <div class="sect7-card img-worker5">
-              <div class="sect7-text">
-                <h5>Title examiner</h5>
-                <p>Lucy Parker</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect7-column sect7-col6">
-            <div class="sect7-card img-worker6">
-              <div class="sect7-text">
-                <h5>Real estate manager</h5>
-                <p>Tony Rogers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="row">
-          <div class="footer-column footer-col1">
-            <div class="footer-card">
-              <div class="footer-text">
-                <h4>Bay Point</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  laudantium nisi enim recusandae, tenetur distinctio iusto
-                  repudiandae minima sapiente voluptatibus!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  laudantium nisi enim recusandae, tenetur distinctio iusto
-                  repudiandae minima sapiente voluptatibus!
-                </p>
-              </div>
-
-              <div class="footer-follow">
-                <p>Follow us:</p>
-
-                <ul>
-                  <li>
-                    <a href="#" target="_blank"
-                      ><i
-                        class="fa fa-facebook-official"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank"
-                      ><i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank"
-                      ><i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="footer-call">
-                <p>Call us: <span>+234 903 839 4584</span></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-column">
-            <div class="footer-card">
-              <h4>Quick Links</h4>
-
-              <ul>
-                <li><a href="./html/property.html">Properties</a></li>
-                <li><a href="./html/blog.html">Blog</a></li>
-                <li>
-                  <a href="#footer" class="footer-contact-btn">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="footer-column">
-            <div class="footer-card">
-              <h4>Services</h4>
-
-              <ul>
-                <li><a class="footer-marketing">Marketing</a></li>
-                <li><a class="footer-pricing"> Pricing</a></li>
-                <li><a class="footer-negotiation">Negotiation</a></li>
-                <li><a class="footer-inspection">Inspection</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="footer-column footer-col4">
-            <div class="footer-card">
-              <h4>categories</h4>
-
-              <ul>
-                <li><a href="#">Land</a></li>
-                <li><a href="#">Residential</a></li>
-                <li><a href="#">Commercial</a></li>
-                <li><a href="#">Industrial</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <!-- Responsive Navbar -->
-    <div class="responsive">
-      <div class="responsive-item">
-        <h2>Bay Point</h2>
-        <div class="responsive-close-btn">+</div>
+    <!-- Section Five - Properties -->
+    <section class="section-five">
+      <div class="section-heading">
+        <h2>Property for sale</h2>
+        <p>Check out some of the properties we have available</p>
       </div>
 
-      <ul>
-        <li><a href="./index.html" class="responsive-home">Home</a></li>
-        <li><a href="./html/property.html">Properties</a></li>
-        <li><a href="./html/blog.html">Blog</a></li>
-      </ul>
-    </div>
+      <div class="sect5-container">
+        <div class="sect5-main-box">
+          <div class="sect5-image-box sect5-img1"></div>
+
+          <div class="sect5-text-box">
+            <p>$16 000</p>
+            <h5>Office</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, perferendis.
+            </p>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+
+        <div class="sect5-main-box">
+          <div class="sect5-image-box sect5-img2"></div>
+
+          <div class="sect5-text-box">
+            <p>$160 000 000</p>
+            <h5>Hotel</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, perferendis.
+            </p>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+
+        <div class="sect5-main-box">
+          <div class="sect5-image-box sect5-img3"></div>
+
+          <div class="sect5-text-box">
+            <p>$1 600</p>
+            <h5>Cottage</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, perferendis.
+            </p>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+
+        <div class="sect5-main-box">
+          <div class="sect5-image-box sect5-img4"></div>
+
+          <div class="sect5-text-box">
+            <p>$160 000 000</p>
+            <h5>Mansion</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, perferendis.
+            </p>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+
+        <div class="sect5-main-box">
+          <div class="sect5-image-box sect5-img5"></div>
+
+          <div class="sect5-text-box">
+            <p>$160 000</p>
+            <h5>High-Rise Apartment</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, perferendis.
+            </p>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Six - Statement -->
+    <section class="section-six">
+      <div class="section-heading">
+        <h2>Statement</h2>
+        <p>Our mission, vision, and values</p>
+      </div>
+
+      <div class="sect6-container">
+        <div class="sect6-main-box">
+          <h3>Mission</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+            doloribus quis, doloremque et sunt, mollitia architecto, rem
+            voluptate esse omnis quidem eaque repellendus perspiciatis?
+            Expedita, itaque. Rem ad dolorum delectus.
+          </p>
+        </div>
+
+        <div class="sect6-main-box">
+          <h3>Vision</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+            doloribus quis, doloremque et sunt, mollitia architecto, rem
+            voluptate esse omnis quidem eaque repellendus perspiciatis?
+            Expedita, itaque. Rem ad dolorum delectus.
+          </p>
+        </div>
+
+        <div class="sect6-main-box">
+          <h3>Values</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+            doloribus quis, doloremque et sunt, mollitia architecto, rem
+            voluptate esse omnis quidem eaque repellendus perspiciatis?
+            Expedita, itaque. Rem ad dolorum delectus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Seven - Team -->
+    <section class="section-seven">
+      <div class="sect7-heading">
+        <p>Meet</p>
+        <h2>The Team</h2>
+      </div>
+
+      <div class="sect7-container">
+        <div class="sect7-main-box sect7-main-box1">
+          <div class="sect7-text-box">
+            <h5>Home Inspector</h5>
+            <p>John Kingsley</p>
+          </div>
+        </div>
+
+        <div class="sect7-main-box sect7-main-box2">
+          <div class="sect7-text-box">
+            <h5>Property Manager</h5>
+            <p>Mary Watson</p>
+          </div>
+        </div>
+
+        <div class="sect7-main-box sect7-main-box3">
+          <div class="sect7-text-box">
+            <h5>Leasing Manager</h5>
+            <p>Paul Grayson</p>
+          </div>
+        </div>
+
+        <div class="sect7-main-box sect7-main-box4">
+          <div class="sect7-text-box">
+            <h5>Escrow officer</h5>
+            <p>Mark Cage</p>
+          </div>
+        </div>
+
+        <div class="sect7-main-box sect7-main-box5">
+          <div class="sect7-text-box">
+            <h5>Title examiner</h5>
+            <p>Lucy Parker</p>
+          </div>
+        </div>
+
+        <div class="sect7-main-box sect7-main-box6">
+          <div class="sect7-text-box">
+            <h5>Real estate manager</h5>
+            <p>Tony Rogers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main-box footer-main-box1">
+          <div class="footer-item1">
+            <h4>Bay Point</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              laudantium nisi enim recusandae, tenetur distinctio iusto
+              repudiandae minima sapiente voluptatibus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              laudantium nisi enim recusandae, tenetur distinctio iusto
+              repudiandae minima sapiente voluptatibus!
+            </p>
+          </div>
+
+          <div class="footer-item2">
+            <p>Follow us:</p>
+
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-item3">
+            <p>Call us: <span>+234 903 839 4584</span></p>
+          </div>
+        </div>
+
+        <div class="footer-main-box footer-main-box2">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="./html/property.html">Properties</a></li>
+            <li><a href="./html/blog.html">Blog</a></li>
+            <li>
+              <a href="#footer" class="footer-contact-btn">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-main-box footer-main-box3">
+          <h4>Services</h4>
+
+          <ul>
+            <li><a id="footer-marketing">Marketing</a></li>
+            <li><a id="footer-pricing"> Pricing</a></li>
+            <li><a id="footer-negotiation">Negotiation</a></li>
+            <li><a id="footer-inspection">Inspection</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- The contact form -->
-    <div class="contact-form">
+    <div id="contact-form">
       <form action="./index.html">
-        <div class="contact-form-item">
-          <div class="contact-close-btn">+</div>
+        <div id="contact-form-item">
+          <div id="contact-close-btn">+</div>
           <label for="#username">Name:</label>
           <input type="text" name="" id="username" />
           <br />
           <label for="#contact-msg">Message:</label>
           <textarea name="" id="contact-msg"></textarea>
 
-          <div class="contact-btn">
+          <div id="contact-send-btn">
             <button type="submit">Send</button>
           </div>
         </div>
       </form>
     </div>
 
-    <!-- Service - Marketing -->
-    <div class="service-marketing">
-      <div class="service-marketing-content">
-        <div class="service-marketing-items">
-          <div class="service-marketing-box1"></div>
+    <!-- Service Popup - Marketing -->
+    <div class="service-popup" id="service-marketing">
+      <div class="service-popup-container">
+        <div class="service-popup-main-box">
+          <div class="service-popup-image" id="marketing-popup-image"></div>
 
-          <div class="service-marketing-box2">
+          <div class="service-popup-text-box">
             <h2>Marketing of homes</h2>
             <p>
               Marketing is among the supports which we as a real estate agency
@@ -537,19 +571,22 @@
               marketing channels, which can help you to sell homes easily and
               quickly.
             </p>
-            <div class="service-marketing-close"><p>close</p></div>
+
+            <div class="service-popup-btn" id="marketing-popup-btn">
+              <p>close</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Service - Pricing -->
-    <div class="service-pricing">
-      <div class="service-pricing-content">
-        <div class="service-pricing-items">
-          <div class="service-pricing-box1"></div>
+    <div class="service-popup" id="service-pricing">
+      <div class="service-popup-container">
+        <div class="service-popup-main-box">
+          <div class="service-popup-image" id="pricing-popup-image"></div>
 
-          <div class="service-pricing-box2">
+          <div class="service-popup-text-box">
             <h2>pricing of properties</h2>
             <p>
               What can attract or scare away customers? Price is one of the
@@ -565,19 +602,22 @@
               social amenities that are around the property before we set up the
               price.
             </p>
-            <div class="service-pricing-close"><p>close</p></div>
+
+            <div class="service-popup-btn" id="pricing-popup-btn">
+              <p>close</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Service - Negotiation -->
-    <div class="service-negotiation">
-      <div class="service-negotiation-content">
-        <div class="service-negotiation-items">
-          <div class="service-negotiation-box1"></div>
+    <div class="service-popup" id="service-negotiation">
+      <div class="service-popup-container">
+        <div class="service-popup-main-box">
+          <div class="service-popup-image" id="negotiation-popup-image"></div>
 
-          <div class="service-negotiation-box2">
+          <div class="service-popup-text-box">
             <h2>negotiation services</h2>
             <p>
               Selling and buying of properties have terms that clients need to
@@ -593,19 +633,22 @@
               our services because we have the routine of offering incredible
               negotiation services.
             </p>
-            <div class="service-negotiation-close"><p>close</p></div>
+
+            <div class="service-popup-btn" id="negotiation-popup-btn">
+              <p>close</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Service - Inspection -->
-    <div class="service-inspection">
-      <div class="service-negotiation-content">
-        <div class="service-inspection-items">
-          <div class="service-inspection-box1"></div>
+    <div class="service-popup" id="service-inspection">
+      <div class="service-popup-container">
+        <div class="service-popup-main-box">
+          <div class="service-popup-image" id="inspection-popup-image"></div>
 
-          <div class="service-inspection-box2">
+          <div class="service-popup-text-box">
             <h2>inspection services</h2>
             <p>
               We as professional inspectors have the skills of examining
@@ -617,206 +660,15 @@
               From the inspection report, we can come up with a pricing decision
               and determine if the renovation is compulsory.
             </p>
-            <div class="service-inspection-close"><p>close</p></div>
+
+            <div class="service-popup-btn" id="inspection-popup-btn">
+              <p>close</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Resort - Image 1 -->
-    <div class="resort-img1">
-      <div class="resort-img1-item">
-        <div class="resort-img1-close">
-          <p>+</p>
-        </div>
-
-        <div class="resort-img1-card"></div>
-      </div>
-    </div>
-
-    <!-- Resort - Image 2 -->
-    <div class="resort-img2">
-      <div class="resort-img2-item">
-        <div class="resort-img2-close">
-          <p>+</p>
-        </div>
-
-        <div class="resort-img2-card"></div>
-      </div>
-    </div>
-
-    <!-- Resort - Image 3 -->
-    <div class="resort-img3">
-      <div class="resort-img3-item">
-        <div class="resort-img3-close">
-          <p>+</p>
-        </div>
-
-        <div class="resort-img3-card"></div>
-      </div>
-    </div>
-
-    <!-- Resort - Image 4 -->
-    <div class="resort-img4">
-      <div class="resort-img4-item">
-        <div class="resort-img4-close">
-          <p>+</p>
-        </div>
-
-        <div class="resort-img4-card"></div>
-      </div>
-    </div>
-
-    <!-- Team - Worker 1 -->
-    <div class="team-worker1">
-      <div class="team-worker1-item">
-        <div class="team-worker1-box">
-          <div class="team-worker1-box1"></div>
-
-          <div class="team-worker1-box2">
-            <h3><span>John Kingsley</span> - Home Inspector</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <a href="#">Contact</a>
-            <a class="team-worker1-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team - Worker 2 -->
-    <div class="team-worker2">
-      <div class="team-worker2-item">
-        <div class="team-worker2-box">
-          <div class="team-worker2-box1"></div>
-
-          <div class="team-worker2-box2">
-            <h3><span>Mary Watson</span> - Property Manager</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <a href="#">Contact</a>
-            <a class="team-worker2-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team - Worker 3 -->
-    <div class="team-worker3">
-      <div class="team-worker3-item">
-        <div class="team-worker3-box">
-          <div class="team-worker3-box1"></div>
-
-          <div class="team-worker3-box2">
-            <h3><span>Paul Grayson</span> - Leasing Manager</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <a href="#">Contact</a>
-            <a class="team-worker3-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team - Worker 4 -->
-    <div class="team-worker4">
-      <div class="team-worker4-item">
-        <div class="team-worker4-box">
-          <div class="team-worker4-box1"></div>
-
-          <div class="team-worker4-box2">
-            <h3><span>Mark Cage</span> - Escrow officer</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <a href="#">Contact</a>
-            <a class="team-worker4-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team - Worker 5 -->
-    <div class="team-worker5">
-      <div class="team-worker5-item">
-        <div class="team-worker5-box">
-          <div class="team-worker5-box1"></div>
-
-          <div class="team-worker5-box2">
-            <h3><span>Lucy Parker</span> - Title Examiner</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <a href="#">Contact</a>
-            <a class="team-worker5-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team - Worker 6 -->
-    <div class="team-worker6">
-      <div class="team-worker6-item">
-        <div class="team-worker6-box">
-          <div class="team-worker6-box1"></div>
-
-          <div class="team-worker6-box2">
-            <h3><span>Tony Rogers</span> - Real Estate Manager</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              maxime? Omnis non voluptas eos deserunt eius nobis veritatis
-              temporibus iusto.
-            </p>
-            <a href="#">Contact</a>
-            <a class="team-worker6-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
